@@ -8,31 +8,31 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question">Question Dummy Text</h2>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_text">Option A</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_text">Option B</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="c" class="answer">
-            <label for="c" id="c_text">Option C</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="d" class="answer">
-            <label for="d" id="d_text">Option D</label>
-          </li>
-        </ul>
-      </div>
- 
-      <button id="submit">Submit</button>
-    </div>
+	<h1 class="title">My<span>Book</span>List</h1>
+	<div class="form-group">
+		<form>
+			<div>Title</div>
+	<input type="text" value="" name="title" id="title">
+	<div>Author</div>
+	<input type="text" value="" name="author" id="author">
+	<div>ISBN#</div>
+	<input type="text" value="" name="isbn" id="isbn">
+	<button id="submit">Add Book</button>
+		</form>
+	</div>
+	<table class="table table-striped">
+			<thead>
+			<tr class="border">
+				<th>Title</th>
+				<th>Author</th>
+				<th>ISBN#</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody id="book-list">
+				
+			</tbody>
+		</table>
     <script type="text/javascript" src="./script.js">
 </script>
 
